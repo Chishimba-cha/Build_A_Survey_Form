@@ -13,40 +13,41 @@
     <p id="description">
         Thank you for taking the time to help us improve the platform 
     </p>
-    <form action="" method="POST">
+    <form id="survey-form" action="" method="POST">
         <fieldset>
             <ol>
                 <li>
-                    <label for="name"> 
+                    <label id= "name-label"  for="name"> 
                     Name
                     </label><br>
-                    <input type="text" name="fullname" id="name">
+                    <input type="text" name="fullname" placeholder="Enter your name" id="name">
                 </li> 
                 <li>
-                    <label for="email"> 
-                    Email
+                    <label id="email-label" for="email"> 
+                    Email <!--Look at User Story #6: If I enter an email that is not formatted correctly, I should see an HTML5 validation error.-->
                     </label><br>
-                    <input type="text" name="email" id="email">
+                    <input type="text" name="email" placeholder="Enter your Email" id="email">
                 </li> 
                 <!--Added another GREAT FORM CONTROL ROUNDUP for Numerical Inputs-->
                 <li>
-                    <label>Age <span>(Optional)</span> <br>
-                    <input type="number" name="guests" min="1"max="99"></label>
+                    <label id="number-label">Age <span>(Optional)</span>
+                         <br> <!--Look at User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I should see an HTML5 validation error.-->
+                    <input type="number" name="number" placeholder="Age" id="number"min="10"max="99"></label>
             
                 </li>
-                <li>   
-                <label for="email"> 
-                        Which option best describes your current role?
-                    </label><br>
-                    <input type="text" name="role" list="role">
-                    <datalist>
-                        <option value="student">student</option>
-                        <option value="Full time job">Full time job</option>
-                        <option value="Full time leaner">Full time leaner</option>
-                        <option value="Prefer not to say">Prefer not to say</option>
-                        <option value="Other">Other</option>
-                    </datalist>
-                </li> 
+                <li>    <!--Add placeholder for this drop down menu-->
+                    <p>What is your favorite feature of freeCodeCamp? ,<br>
+                        <select name="freeCodeCamp"  value="Select current role" style="width: 50em;" >
+                        
+                        <option>Student</option>
+                        <option>Full Time Job</option>
+                        <option>Full Time Learner</option>
+                        <option>Prefer not to say</option>
+                        <option>Other</option>
+                        </select>
+                        </p>
+                    </li>
+
             
                 <li>
                     <p>Would you recommend freeCodeCamp to a friend??</p>
@@ -56,11 +57,11 @@
                 </li>
                     <li>    <!--Add placeholder for this drop down menu-->
                     <p>What is your favorite feature of freeCodeCamp? ,<br>
-                        <select name="freeCodeCamp"  >
-                        <option>Challenages</option>
-                        <option>Projects</option>
-                        <option>Community</option>
-                        <option>Open Source</option>
+                        <select name="freeCodeCamp" >
+                        <option id="dropdown">Challenages</option>
+                        <option id="dropdown">Projects</option>
+                        <option id="dropdown">Community</option>
+                        <option id="dropdown">Open Source</option>
                         </select>
                         </p>
                     </li>
@@ -104,7 +105,7 @@
                         value="Enter your comments here" placeholder="Enter your commments here ...">                    
                     </li>
                     
-                        <Button type="Submit"> Submit</Button> 
+                        <Button id="submit" type="Submit"> Submit</Button> 
                     
 
             </ol>
