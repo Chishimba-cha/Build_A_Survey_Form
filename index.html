@@ -28,8 +28,14 @@
                     </label><br>
                     <input type="text" name="email" id="email">
                 </li> 
+                <!--Added another GREAT FORM CONTROL ROUNDUP for Numerical Inputs-->
                 <li>
-                    <label for="email"> 
+                    <label>Age <span>(Optional)</span> <br>
+                    <input type="number" name="guests" min="1"max="99"></label>
+            
+                </li>
+                <li>   
+                <label for="email"> 
                         Which option best describes your current role?
                     </label><br>
                     <input type="text" name="role" list="role">
@@ -41,12 +47,14 @@
                         <option value="Other">Other</option>
                     </datalist>
                 </li> 
-                <p>pppppppppppp***********</p>
-                <p>Would you recommend freeCodeCamp to a friend??</p>
-                    <input type="radio" name="age" value="Definitely" checked> Definitely
+            
+                <li>
+                    <p>Would you recommend freeCodeCamp to a friend??</p>
+                    <li><input type="radio" name="age" value="Definitely" checked> Definitely</li>
                     <li><input type="radio" name="age" value="Maybe"> Maybe </li>
                     <li><input type="radio" name="age" value="Not sure"> Not sure</li>
-
+                </li>
+                    <li>    <!--Add placeholder for this drop down menu-->
                     <p>What is your favorite feature of freeCodeCamp? ,<br>
                         <select name="freeCodeCamp"  >
                         <option>Challenages</option>
@@ -55,6 +63,7 @@
                         <option>Open Source</option>
                         </select>
                         </p>
+                    </li>
 
                     <p>
                         What would you like to see improvede? <span> (check all that apply)</span>
@@ -88,18 +97,17 @@
                          </li>
 
                     </p>
+                    <li> <!-- Added second GREAT FORM CONTROL ROUNDUP for Text-Entry Control for multiline text entry field-->
+                        <label>Any comments or suggestions? </label>
+                        <br>
+                        <input type="textarea" name="comments"
+                        value="Enter your comments here" placeholder="Enter your commments here ...">
+                    
+                    </li>
 
             </ol>
             
-            <p>Education completed: <input type="text" list="edulevel"
-                name="education">
-                <datalist id="edulevel">
-                <option value="High School">
-                <option value="Bachelors Degree">
-                <option value="Masters Degree">
-                <option value="PhD">
-                </datalist>
-    
+            
         </fieldset>
     </form>
     
