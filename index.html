@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="surveyForm.css">
     <title>Survey Form</title>
     </head>
 <body>
@@ -24,26 +25,27 @@
                 </li> 
                 <li>
                     <label id="email-label" for="email"> 
-                    Email <!--Look at User Story #6: If I enter an email that is not formatted correctly, I should see an HTML5 validation error.-->
+                    Email 
                     </label><br>
-                    <input type="text" name="email" placeholder="Enter your Email" id="email">
+                    <input type="email" name="email" placeholder="Enter your Email" id="email">
                 </li> 
                 <!--Added another GREAT FORM CONTROL ROUNDUP for Numerical Inputs-->
                 <li>
                     <label id="number-label">Age <span>(Optional)</span>
-                         <br> <!--Look at User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I should see an HTML5 validation error.-->
+                         <br> 
                     <input type="number" name="number" placeholder="Age" id="number"min="10"max="99"></label>
             
                 </li>
                 <li>    <!--Add placeholder for this drop down menu-->
-                    <p>What is your favorite feature of freeCodeCamp? ,<br>
+                    <p>What is your favorite feature of freeCodeCamp? 
+                        <br>
                         <select name="freeCodeCamp"  value="Select current role" style="width: 50em;" >
                         
-                        <option>Student</option>
-                        <option>Full Time Job</option>
-                        <option>Full Time Learner</option>
-                        <option>Prefer not to say</option>
-                        <option>Other</option>
+                        <option id="dropdown">Student</option>
+                        <option id="dropdown">Full Time Job</option>
+                        <option id="dropdown">Full Time Learner</option>
+                        <option id="dropdown">Prefer not to say</option>
+                        <option id="dropdown">Other</option>
                         </select>
                         </p>
                     </li>
@@ -56,7 +58,7 @@
                     <li><input type="radio" name="age" value="Not sure"> Not sure</li>
                 </li>
                     <li>    <!--Add placeholder for this drop down menu-->
-                    <p>What is your favorite feature of freeCodeCamp? ,<br>
+                    <p>What is your favorite feature of freeCodeCamp? <br>
                         <select name="freeCodeCamp" >
                         <option id="dropdown">Challenages</option>
                         <option id="dropdown">Projects</option>
