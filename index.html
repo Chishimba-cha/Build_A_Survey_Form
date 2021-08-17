@@ -20,56 +20,80 @@
                 <li>
                     <label id= "name-label"  for="name"> 
                     Name
-                    </label><br>
+                    </label>
+                    <br>
                     <input type="text" name="fullname" placeholder="Enter your name" id="name">
                 </li> 
                 <li>
                     <label id="email-label" for="email"> 
                     Email 
-                    </label><br>
+                    </label>
+                    <br>
                     <input type="email" name="email" placeholder="Enter your Email" id="email">
                 </li> 
                 <!--Added another GREAT FORM CONTROL ROUNDUP for Numerical Inputs-->
                 <li>
-                    <label id="number-label">Age <span>(Optional)</span>
-                         <br> 
-                    <input type="number" name="number" placeholder="Age" id="number"min="10"max="99"></label>
+                    <label id="number-label">Age 
+                        <span> 
+                            (Optional)
+                        </span>
+                        <br> 
+                        <input type="number" name="number" placeholder="Age" id="number"min="10"max="99">
+                    </label>
             
                 </li>
                 <li>    <!--Add placeholder for this drop down menu-->
-                    <p>What is your favorite feature of freeCodeCamp? 
-                        <br>
-                        <select name="freeCodeCamp"  value="Select current role" style="width: 50em;" >
-                        
-                        <option id="dropdown">Student</option>
-                        <option id="dropdown">Full Time Job</option>
-                        <option id="dropdown">Full Time Learner</option>
-                        <option id="dropdown">Prefer not to say</option>
-                        <option id="dropdown">Other</option>
+                    <label>What is your favorite feature of freeCodeCamp? 
+                        <select name="freeCodeCamp"  value="Select current role" >
+                            <option id="dropdown">
+                                Student
+                            </option>
+                            <option id="dropdown">
+                                Full Time Job
+                            </option>
+                            <option id="dropdown">
+                                Full Time Learner
+                            </option>
+                            <option id="dropdown">
+                                Prefer not to say
+                            </option>
+                            <option id="dropdown">
+                                Other
+                            </option>
                         </select>
-                        </p>
-                    </li>
+                    </label>
+                </li>
 
             
                 <li>
-                    <p>Would you recommend freeCodeCamp to a friend??</p>
-                    <li><input type="radio" name="age" value="Definitely" checked> Definitely</li>
-                    <li><input type="radio" name="age" value="Maybe"> Maybe </li>
-                    <li><input type="radio" name="age" value="Not sure"> Not sure</li>
+                    <label>
+                        Would you recommend freeCodeCamp to a friend??
+                    
+                        <li>
+                            <input type="radio" name="age" value="Definitely" checked> Definitely
+                        </li>
+                        <li>
+                            <input type="radio" name="age" value="Maybe"> Maybe 
+                        </li>
+                        <li>
+                            <input type="radio" name="age" value="Not sure"> Not sure
+                        </li>
+                    </label>
                 </li>
                     <li>    <!--Add placeholder for this drop down menu-->
-                    <p>What is your favorite feature of freeCodeCamp? <br>
+                    <label>What is your favorite feature of freeCodeCamp? <br>
                         <select name="freeCodeCamp" >
                         <option id="dropdown">Challenages</option>
                         <option id="dropdown">Projects</option>
                         <option id="dropdown">Community</option>
                         <option id="dropdown">Open Source</option>
                         </select>
-                        </p>
+                    </label>
                     </li>
 
-                    <p>
+                    <label>
                         What would you like to see improvede? <span> (check all that apply)</span>
+                    </label>
                         <li>
                             <input type="checkbox" name="Front-end Projects" value="Front-end Projects">Front-end Projects
                         </li>
@@ -78,30 +102,36 @@
                         </li>
                         <li>
                             <input type="checkbox" name="Data_Visualization" value="Data_Visualization"> Data Visualization         
-                         </li>
-                         <li>
+                        </li>
+                        <li>
                             <input type="checkbox" name="Challenges" value="Challenges"> Challenges         
-                         </li>
-                         <li>
+                        </li>
+                        <li>
                             <input type="checkbox" name="Open_Source_Community" value="Open_Source_Community"> Open Source Community
-                         </li><li>
+                        </li>
+                        <li>
                             <input type="checkbox" name="Gitter_help_rooms" value="Gitter_help_rooms"> Gitter help rooms         
-                         </li><li>
+                        </li><li>
                             <input type="checkbox" name="Videos" value="Videos"> Videos   
-                         </li><li>
+                        </li>
+                        <li>
                             <input type="checkbox" name="City_Meetups" value="City_Meetups"> City Meetups         
-                         </li><li>
+                        </li>
+                        <li>
                             <input type="checkbox" name="Wiki" value="Wiki"> Wiki      
-                         </li><li>
+                        </li>
+                        <li>
                             <input type="checkbox" name="Forum" value="Forum"> Forum     
-                         </li>
-                         <li>
+                        </li>
+                        <li>
                             <input type="checkbox" name="Additional_Courses" value="Additional_Courses"> Additional_Courses     
-                         </li>
-
-                    </p>
+                        </li>
+                    
+                    
                     <li> <!-- Added second GREAT FORM CONTROL ROUNDUP for Text-Entry Control for multiline text entry field-->
-                        <label>Any comments or suggestions? </label>
+                        <label>
+                            Any comments or suggestions? 
+                        </label>
                         <br>
                         <input type="textarea" name="comments"
                         value="Enter your comments here" placeholder="Enter your commments here ...">                    

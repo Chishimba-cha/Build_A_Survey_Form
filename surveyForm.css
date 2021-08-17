@@ -1,0 +1,40 @@
+body{
+    background-image: url(/Build_A_Survey_Form/images/freecodecamp-logo-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+    background-color: cornflowerblue;
+    background-attachment: fixed;
+}
+
+#title, #description{
+    text-align: center;
+    color:whitesmoke;
+}
+#survey-form{
+    display: flex;
+    border: 1px solid maroon;
+    
+    }
+fieldset{
+    padding: .5em 5em 1em 2em ;    
+    border-radius: .1em;
+    margin: auto;
+    background-color: rgba(83, 79, 110, .5);
+     
+}
+fieldset ol li{
+    text-decoration: none;
+    list-style-type: none;
+    color: whitesmoke;
+    padding-bottom: 1em;
+}
+label, p{
+    font-size: large;
+    
+}
+#name,#email, #number{
+    
+    width: 55em;
+    height: 2em;
+}
