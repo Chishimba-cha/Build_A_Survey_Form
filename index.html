@@ -8,67 +8,97 @@
     <title>Survey Form</title>
     </head>
 <body>
+    
+    <!--Div to set opacity between bg image and form.-->
+    <div class="container">
+        <header>
+        
+        </header>
+    <!--User Story #1: I can see a title with id="title" in H1 sized text.-->
     <h1 id="title">
         freeCodeCamp Survey Form
-    </h1>
+         <!--User Story #2: I can see a short explanation with id="description" in P sized text.-->
     <p id="description">
         Thank you for taking the time to help us improve the platform 
     </p>
+    </h1>
+   
+    <!--User Story #3: I can see a form with id="survey-form".-->
     <form id="survey-form" action="" method="POST">
         <fieldset>
             <ol>
                 <li>
+                    <!--User Story #10: For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label".-->
                     <label id= "name-label"  for="name"> 
                     Name
-                    </label>
                     <br>
-                    <input type="text" name="fullname" placeholder="Enter your name" id="name">
+                    </label>
+                    <!--User Story #4: Inside the form element, I am required to enter my name in a field with id="name".-->
+                    <!--User Story #11: For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field.-->
+                    <input id="name" type="text" name="name" placeholder="Enter your name" required>
+                    
                 </li> 
                 <li>
-                    <label id="email-label" for="email"> 
-                    Email 
+                    <!--User Story #10: For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label".-->
+                    
+                    <label id="email-label" for="email"> Email                     
+                     <br>
                     </label>
-                    <br>
-                    <input type="email" name="email" placeholder="Enter your Email" id="email">
+                    <!--User Story #5: Inside the form element, I am required to enter an email in a field with id="email".-->
+                    <!--User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error. Used an attribute required to validate form.-->
+                    <!--User Story #11: For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field.-->
+                        <input 
+                        id="email"
+                        type="email" name="email" placeholder="Enter your Email"  required>
+                    
                 </li> 
-                <!--Added another GREAT FORM CONTROL ROUNDUP for Numerical Inputs-->
+                
                 <li>
+                    <!--User Story #10: For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label".-->
                     <label id="number-label">Age 
-                        <span> 
+                        <span id="span"> 
                             (Optional)
                         </span>
-                        <br> 
-                        <input type="number" name="number" placeholder="Age" id="number"min="10"max="99">
                     </label>
-            
+                        <br> 
+                        <!--User Story #7: Inside the form, I can enter a number in a field with id="number"-->
+                        <!--User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error. used attribute with type number.-->
+                        <!--User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error. Used the min and max to validate this.-->
+                        <!--User Story #11: For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field.-->
+                        <input  id="number" type="number" name="number" placeholder="Age" min="10"max="99">
+                              
                 </li>
-                <li>    <!--Add placeholder for this drop down menu-->
+                <li>   
                     <label>What is your favorite feature of freeCodeCamp? 
-                        <select name="freeCodeCamp"  value="Select current role" >
-                            <option id="dropdown">
+                    </label>
+                    <br>
+                    <!--User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown"-->
+                        <select id="dropdown" name="freeCodeCamp"  value="Select current role" required >
+                            <option selected disabled> select an option</option>    
+                            <option >
                                 Student
                             </option>
-                            <option id="dropdown">
+                            <option >
                                 Full Time Job
                             </option>
-                            <option id="dropdown">
+                            <option >
                                 Full Time Learner
                             </option>
-                            <option id="dropdown">
+                            <option >
                                 Prefer not to say
                             </option>
-                            <option id="dropdown">
+                            <option >
                                 Other
                             </option>
                         </select>
-                    </label>
+                    
                 </li>
 
             
                 <li>
                     <label>
                         Would you recommend freeCodeCamp to a friend??
-                    
+                    </label>
                         <li>
                             <input type="radio" name="age" value="Definitely" checked> Definitely
                         </li>
@@ -78,22 +108,28 @@
                         <li>
                             <input type="radio" name="age" value="Not sure"> Not sure
                         </li>
-                    </label>
+                    
                 </li>
                     <li>    <!--Add placeholder for this drop down menu-->
-                    <label>What is your favorite feature of freeCodeCamp? <br>
-                        <select name="freeCodeCamp" >
-                        <option id="dropdown">Challenages</option>
-                        <option id="dropdown">Projects</option>
-                        <option id="dropdown">Community</option>
-                        <option id="dropdown">Open Source</option>
-                        </select>
+                    <label>What is your favorite feature of freeCodeCamp?
                     </label>
+                     <br>
+
+                    <!--User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown"-->
+                        <select id="dropdown" name="freeCodeCamp" required>
+                        <option  selected disabled> select an option</option>    
+                        <option >Challenages</option>
+                        <option >Projects</option>
+                        <option >Community</option>
+                        <option >Open Source</option>
+                        </select>
+                    
                     </li>
 
                     <label>
-                        What would you like to see improvede? <span> (check all that apply)</span>
+                        What would you like to see improved? <span id="span"> (check all that apply)</span>
                     </label>
+                    <!--User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute.-->
                         <li>
                             <input type="checkbox" name="Front-end Projects" value="Front-end Projects">Front-end Projects
                         </li>
@@ -133,18 +169,17 @@
                             Any comments or suggestions? 
                         </label>
                         <br>
-                        <input type="textarea" name="comments"
-                        value="Enter your comments here" placeholder="Enter your commments here ...">                    
+                        <!--User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments.-->
+                         <textarea id="comments" value="Enter your comments here" name="comments"  placeholder="Enter your commments here ..."></textarea>                  
                     </li>
-                    
+                    <!--User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs.-->
                         <Button id="submit" type="Submit"> Submit</Button> 
-                    
-
+                 
             </ol>
             
             
         </fieldset>
     </form>
-    
+</div>  
 </body>
 </html>

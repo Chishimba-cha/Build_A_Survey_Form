@@ -1,40 +1,107 @@
+
+header{
+    
+    background-color: rgba(30, 31, 38, 8);
+    border-color: rgba(30, 31, 38, 9);
+    margin: 0;
+    color: rgba(30, 31, 38, 9);
+ height: 4em;
+ position: fixed;
+ width: 100%;
+ top: 0;
+ 
+    border: 1px solid black;}
+.container{
+    background:rgba(57, 58, 138, .7);
+    margin: 0 ;
+    
+    
+}
+/*styles for image*/
 body{
-    background-image: url(/Build_A_Survey_Form/images/freecodecamp-logo-1.png);
+    
+    background-image: url(/Build_A_Survey_Form/images/hackathon-image-3.jpeg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 40%;
-    background-color: cornflowerblue;
+    background-size: cover ;
+    margin: 0;
     background-attachment: fixed;
 }
-
-#title, #description{
+body{
+    color: black;
+}
+/* Styles for the*/
+#title {
     text-align: center;
     color:whitesmoke;
+    padding-top: 3em;
+    padding-bottom: 0;
+    font-size: 1.75em;
+   
 }
-#survey-form{
-    display: flex;
-    border: 1px solid maroon;
+#description{
+    font-size: medium;
+    font-style: italic;
     
-    }
+   
+}
+/*style for the form element*/
+#survey-form{
+    display: flex; 
+       
+}
 fieldset{
     padding: .5em 5em 1em 2em ;    
     border-radius: .1em;
     margin: auto;
-    background-color: rgba(83, 79, 110, .5);
-     
+    background: rgba(40, 40, 72, .9);
+    border-color: rgba(83, 79, 110, .5);
 }
 fieldset ol li{
     text-decoration: none;
     list-style-type: none;
     color: whitesmoke;
     padding-bottom: 1em;
-}
-label, p{
     font-size: large;
-    
+    line-height: 1em;
 }
+label{
+    font-size: large;
+    color: whitesmoke;
+    }
 #name,#email, #number{
-    
-    width: 55em;
-    height: 2em;
+     width: 31em;
+    height: 2.1em;
+    border-radius: .3em;
+}
+#dropdown{
+    width: 38em;
+    height: 2.5em;
+    font-size: medium;
+
+}
+#number,#email, #name{
+    font-size: large;
+    }
+    #span{
+        font-size: small;
+
+    }
+
+/*Style for the textarea*/
+#comments{
+    width: 45em;
+    height:10em ;
+    resize: vertical;
+    font-size: medium;
+}
+/*styles for button*/
+button{
+    width: 39.2em;
+    height: 3em;
+    background-color: green;
+    border-color: green;
+    border-radius: .2em;
+    color: whitesmoke;
+    font-size: medium;
 }
